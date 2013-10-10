@@ -1,0 +1,360 @@
+/* http://meyerweb.com/eric/tools/css/reset/
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video, button {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+
+body {
+	line-height: 1;
+}
+
+ol, ul {
+	list-style: none;
+}
+
+blockquote, q {
+	quotes: none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/* =============================================================================
+   Primary styles
+   Author: Juan Luis Carratalá
+   ========================================================================== */
+
+img {
+	display: none;
+}
+
+body {
+	font-family: Georgia, Times New Roman, sans-serif;
+	font-size: 12pt;
+	background: #fff;
+	color: #000;
+}
+
+h1 {
+	word-spacing: 0.0em;
+	margin-left: 10px;
+	padding-top: 15px;
+	line-height: 1.2em;
+	font-size: 2em;
+	height: 2em;
+}
+
+h1 > span.title1 {
+	color: #aaa;
+}
+
+h1 > span.title2 {
+	font-weight: bold;
+}
+
+fieldset {
+
+}
+
+legend {
+	display: none;
+}
+
+legend:after {
+}
+
+label {
+	clear: both;
+	display: block;
+	font-size: 1.1em;
+}
+
+a {
+	text-decoration: none;
+}
+
+a:hover {
+	text-decoration: underline;
+}
+
+sup {
+
+}
+
+input, textarea {
+	margin-bottom: 25px;
+	font-size: 18px;
+	border: 2px solid #000;
+	padding-top: 6px;
+	padding-right: 8px;
+	padding-left: 8px;
+	padding-bottom: 6px;
+	font-family: Georgia, Times New Roman, sans-serif;
+}
+
+input[type="text"], input[type="password"], input[type="email"],
+input[type="textarea"], input[type="date"], input[type="time"] {
+	width: 375px;
+}
+
+input[type="file"] {
+	background-color: transparent;
+	border: none;
+	box-shadow: none;
+	color: #fff;
+	padding-left: 0;
+	display: inline-block;
+	z-index: 2;
+}
+
+input[type="checkbox"] {
+	padding: 0;
+	margin-bottom: 0;
+}
+
+input[type="checkbox"], input[type="radio"], input[type="checkbox"]:focus, input[type="radio"]:focus {
+	background-color: transparent;
+	border: none;
+	margin: 0;
+	padding: 0;
+}
+
+.chkb {
+	display: block;
+}
+
+label#afLbl, label#paisLbl {
+	margin-top: 25px;
+}
+
+button {
+	text-decoration: underline;
+	background-color: transparent;
+}
+
+dt {
+	margin-top: 10px;
+}
+
+textarea {
+	margin-bottom: 25px;
+	width: 375px;
+}
+
+h2 {
+	font-size: 1.4em;
+	margin: 4px 0;
+}
+
+p {
+	margin: 5px 0 25px 0;
+}
+
+input.awesome {
+	background-color: #FFFFFF;
+	display: inline-block;
+	margin-top: 5px;
+	padding: 5px 10px 6px;
+	color: #000;
+	text-decoration: none;
+	line-height: 1;
+	-moz-border-radius: 5px;
+	-webkit-border-radius: 5px;
+	border-radius: 5px;
+	border: #000 solid 2px;
+	cursor: pointer;
+	width: 120px;
+	font-size: 1.1em;
+}
+
+form {
+	margin-top: 25px;
+}
+
+#header {
+
+}
+
+#nav {
+	overflow: hidden;
+	padding: 15px 25px;
+	padding-left: 10px;
+	margin: 0 auto;
+	margin-bottom: -30px;
+}
+
+#wrapper {
+	overflow: hidden;
+	padding-top: 15px;
+	padding-left: 10px;
+	padding-bottom: 15px;
+	margin: 0 auto 10px;
+	-moz-border-radius: 20px;
+	-webkit-border-radius: 20px;
+	border-radius: 20px;
+	text-decoration: none;
+	word-spacing: normal;
+	letter-spacing: 0;
+}
+
+a:link, a:visited {
+	color: #520;
+	background: transparent;
+	font-weight: bold;
+	text-decoration: underline;
+}
+
+a:link:after, a:visited:after {
+	content: " (" attr(href) ") ";
+	font-size: 90%;
+}
+
+#submitBtn input.awesome, #searchBtn input.awesome {
+	margin-left: 130px;
+	margin-top: 15px;
+}
+
+#footer {
+	padding-bottom: 15px;
+	margin-left: 10px;
+}
+
+#lastsUsers img {
+	height: 30px;
+	width: 30px;
+}
+
+.small {
+	font-size: 0.95em;
+	margin: 15px 0;
+}
+
+.smaller {
+	font-size: 0.95em;
+	margin: 15px 0;
+}
+
+#nav ul {
+	float: left;
+	clear: both;
+	width: 100%;
+	list-style-type: none;
+	margin: 0px;
+	padding: 0px 0px 10px 0px;
+}
+
+#nav ul li {
+	display: inline;
+	float: left;
+	padding-right: 10px;
+}
+
+#nav ul li a {
+	/*
+	 background; url..., no-repeat top left;
+ */
+	display: block;
+	float: left;
+	padding: 0 0 0 2px;
+}
+
+#nav ul li a:hover {
+
+}
+
+.selected a {
+	text-decoration: none;
+	color: #aaa;
+}
+
+#nav ul li a span {
+	/*
+	 background: url... no-repeat right top;
+ */
+	float: left;
+	padding: 5px 15px 4px 6px;
+}
+
+#presentacion {
+	font-size: 1.3em;
+}
+
+#lastsUsers {
+	font-size: 0.8em;
+	width: 395px;
+}
+
+#tableLastUsers {
+	width: 100%;
+	text-align: center;
+	border-top: 7px solid #000;
+	border-bottom: 7px solid #000;
+	vertical-align: top;
+}
+
+#tableLastUsers th {
+	padding-bottom: 10px;
+	padding-top: 15px;
+	font-size: 1.2em;
+}
+
+#tableLastUsers td {
+	padding-top: 10px;
+	padding-bottom: 10px;
+}
+
+#tableLastUsers td, #tableLastUsers th {
+	border-left: 1px solid #000;
+	border-right: 1px solid #000;
+}
+
+#edadDe {
+	margin-right: 10px;
+}
+
+.c_checkbox, .c_radio {
+	margin: 5px 0 10px 0;
+	padding: 0;
+}
+
+.right {
+	float: right;
+}
+
+.buttons {
+	width: 375px;
+}

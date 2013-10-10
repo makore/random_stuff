@@ -1,0 +1,18 @@
+
+***** Práctica 2 *****
+
+Requerimientos adicionales implementados:
+-Elegir icono del evento.
+-Facilitar la introducción de fecha y hora de los eventos.
+-Caja de texto al estilo 'twitter'
+
+Otras mejoras:
+-Al pulsar sobre un marker se borran los globos de texto mostrados con anterioridad.
+-La fecha seleccionada de nuevo evento debe ser posterior a la actual
+
+***** Práctica 3 *****
+
+Requerimientos adicionales implementados:
+
+-Posteo de comentarios
+-Animación con 'animate' del cuadro de búsqueda de eventos en suscritos.jsp
