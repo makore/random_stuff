@@ -1,7 +1,9 @@
 package makore.spring_app.controller;
 
+import java.util.List;
 import java.util.Map;
 
+import makore.spring_app.model.User;
 import makore.spring_app.service.UserPersistenceService;
 import makore.spring_app.service.UserSessionService;
 
@@ -18,7 +20,8 @@ public class HomeController {
 
 	@RequestMapping({ "/", "/home" })
 	public String showHomePage(Map<String, Object> model) {
-		model.put("hello", "world");
+		List<User> users = userPersistenceService.getAllUsers();
+		model.put("users", users);
 		return "home";
 	}
 }

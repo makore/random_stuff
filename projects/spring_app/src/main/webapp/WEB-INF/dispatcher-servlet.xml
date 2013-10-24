@@ -9,7 +9,8 @@
 						http://www.springframework.org/schema/mvc
 						http://www.springframework.org/schema/mvc/spring-mvc.xsd">
 
-	<mvc:resources location="/resources/" mapping="/resources/**" />
+	<mvc:resources mapping="/resources/**"
+		location="/, classpath:/WEB-INF/public-resources/" cache-period="10000" />
 
 	<context:component-scan base-package="makore.spring_app" />
 
