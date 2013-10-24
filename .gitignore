@@ -4,3 +4,11 @@
 *.jar
 *.war
 *.ear
+
+# Java IDE Settings
+.settings
+.idea
+.classpath
+.project
+.springBeans
+spring_app.iml
