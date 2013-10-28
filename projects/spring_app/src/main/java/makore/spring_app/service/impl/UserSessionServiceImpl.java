@@ -4,13 +4,14 @@ import makore.spring_app.dao.UserDao;
 import makore.spring_app.model.Message;
 import makore.spring_app.model.User;
 
+import makore.spring_app.service.UserSessionService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.context.annotation.Scope;
 import org.springframework.stereotype.Service;
 
 @Service
 @Scope("session")
-public class UserSessionServiceImpl {
+public class UserSessionServiceImpl implements UserSessionService {
 	@Autowired
 	private UserDao dao;
 	private User user;

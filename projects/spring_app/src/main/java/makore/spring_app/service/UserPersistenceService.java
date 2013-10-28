@@ -4,6 +4,7 @@ import java.util.List;
 
 import makore.spring_app.common.SpringAppException;
 import makore.spring_app.model.User;
+import org.springframework.stereotype.Service;
 
 public interface UserPersistenceService {
 	User findUser(Long id);

@@ -17,10 +17,8 @@ public abstract class CustomHibernateDaoSupport<T> extends
 		HibernateDaoSupport {
 	private Class<T> persistentClass;
 
-	// private final static Logger logger = Logger.getLogger("hbrnt");
-
 	@SuppressWarnings("unchecked")
-	public CustomHibernateDaoSupport() {
+	protected CustomHibernateDaoSupport() {
 		this.persistentClass = (Class<T>) ((java.lang.reflect.ParameterizedType) getClass()
 				.getGenericSuperclass()).getActualTypeArguments()[0];
 	}
@@ -30,7 +28,7 @@ public abstract class CustomHibernateDaoSupport<T> extends
 		super.setSessionFactory(factory);
 	}
 
-	public Class<T> getPersistentClass() {
+	protected Class<T> getPersistentClass() {
 		return this.persistentClass;
 	}
 

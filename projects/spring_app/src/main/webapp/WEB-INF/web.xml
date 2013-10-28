@@ -19,7 +19,6 @@
 		<param-name>contextConfigLocation</param-name>
 		<param-value>
 			/WEB-INF/dispatcher-servlet.xml
-			classpath:hibernate-spring.xml
 		</param-value>
 	</context-param>
 
