@@ -5,12 +5,13 @@ import java.util.List;
 import makore.spring_app.common.SpringAppException;
 import makore.spring_app.dao.UserDao;
 import makore.spring_app.model.User;
+import makore.spring_app.service.UserPersistenceService;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
 @Service
-public class UserPersistenceServiceImpl {
+public class UserPersistenceServiceImpl implements UserPersistenceService {
 	@Autowired
 	private UserDao dao;
 

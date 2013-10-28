@@ -8,12 +8,17 @@ import makore.spring_app.model.User;
 
 import org.hibernate.Hibernate;
 import org.springframework.stereotype.Repository;
+import org.springframework.transaction.TransactionStatus;
 import org.springframework.transaction.annotation.Propagation;
 import org.springframework.transaction.annotation.Transactional;
+import org.apache.log4j.Logger;
+import org.springframework.transaction.interceptor.TransactionInterceptor;
 
 @Repository
 public class UserHibernateDao extends CustomHibernateDaoSupport<User>
 		implements UserDao {
+
+	private final static Logger logger = Logger.getLogger("hbrnt");
 
 	@Transactional(readOnly = true, propagation = Propagation.SUPPORTS)
 	@Override
@@ -28,6 +33,8 @@ public class UserHibernateDao extends CustomHibernateDaoSupport<User>
 	@Transactional(propagation = Propagation.REQUIRED)
 	@Override
 	public void save(User user) {
+		TransactionStatus transactionStatus = TransactionInterceptor.currentTransactionStatus();
+		logger.info("Transaction status in save user method: " + transactionStatus);
 		attachDirty(user);
 	}
 
